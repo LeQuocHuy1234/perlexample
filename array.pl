@@ -1,6 +1,9 @@
-@days = ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun');
+use warnings;
+use strict;
 
-print("@animals\n");
+my @days = ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun');
+
+print("@days\n");
 # Lay gia tri phan tu dau tien
 print("Phan tu dau tien: $days[0]\n");
 
@@ -8,7 +11,7 @@ print("Phan tu dau tien: $days[0]\n");
 print("Phan tu dau tien: $days[-1]\n");
 
 # Lay phan tu thu 1 va thu 2 cua mang
-@weekend = @days[0,1];
+my @weekend = @days[0,1];
 
 print("@weekend\n");
 
@@ -19,7 +22,7 @@ $days[0] = 'Monday';
 print("@days\n");
 
 # push pop
-@stack = ();
+my @stack = ();
  
 print("Them 1 vao array\n");
  
